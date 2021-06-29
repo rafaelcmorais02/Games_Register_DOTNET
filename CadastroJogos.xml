@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CadastroJogos</name>
+    </assembly>
+    <members>
+        <member name="M:CadastroJogos.Controllers.v1.JogosController.Obter(System.Int32,System.Int32)">
+            <summary>
+            Busca todos os jogos de forma paginada
+            </summary>
+            <param name="pagina">Pagina para buscar os jogos</param>
+            <param name="quantidade">Número de jogos</param>
+            <returns>Retorna a lista de jogos</returns>
+        </member>
+        <member name="M:CadastroJogos.Controllers.v1.JogosController.Obter(System.Guid)">
+            <summary>
+            Busca um jogo através de seu ID
+            </summary>
+            <param name="idJogo">Id do jogo</param>
+            <returns>Retorna um jogo apenas</returns>
+        </member>
+        <member name="M:CadastroJogos.Controllers.v1.JogosController.InserirJogo(CadastroJogos.InputModel.JogosInputModel)">
+            <summary>
+            Insere um jogo no banco de dados
+            </summary>
+            <param name="jogosInputModel">Parâmetros de cadastro</param>
+            <returns>Retorna o jogo cadastrado</returns>
+        </member>
+        <member name="M:CadastroJogos.Controllers.v1.JogosController.AtualizaJogo(System.Guid,CadastroJogos.InputModel.JogosInputModel)">
+            <summary>
+            Atualiza um jogo, por id
+            </summary>
+            <param name="idJogo">id do jogo</param>
+            <param name="jogosInputModel">parâmetros que serão atualizados</param>
+            <returns></returns>
+        </member>
+        <member name="M:CadastroJogos.Controllers.v1.JogosController.AtualizaJogo(System.Guid,System.Double)">
+            <summary>
+            Atualiza o valor de um jogo por id
+            </summary>
+            <param name="idJogo">id do jogo</param>
+            <param name="preco">preço que será atualizado</param>
+            <returns></returns>
+        </member>
+        <member name="M:CadastroJogos.Controllers.v1.JogosController.DeletaJogo(System.Guid)">
+            <summary>
+            Deleta um jogo através de seu id
+            </summary>
+            <param name="idJogo">id do jogo</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
